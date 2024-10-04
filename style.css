@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-    background-color: rgb(0, 0, 0);
+    background: linear-gradient(black,rgb(71, 71, 71), black);
 }
 
 header {
@@ -12,7 +12,7 @@ header {
 }
 
 .button {
-    background-color: #36bbce;
+    background: linear-gradient(#36bbce, blue, darkblue);
     color: black;
     text-decoration: none;
     padding: 15px;
@@ -36,11 +36,16 @@ nav {
 }
 
 h1 {
+    display: flex;
     text-align: center;
-    color: black;
+    color: white;
     font-size: 36px;
-    margin-top: ;
-    margin-bottom: ;
+    margin-top: 15;
+    margin-bottom: 25;
+    margin-left: 18px;
+    float: left;
+    padding-left: 3px;
+    border-left: 2px solid white;
 }
 
 p {
@@ -50,30 +55,31 @@ p {
 .info {
     display: flex;
     flex-wrap: wrap;
-    width: 1000px;
-    margin: 0px;
+    width: 100%;
 }
 
 article {
-    background-color: white;
+    background: linear-gradient(to bottom left, white, lightblue);
     padding: 15px;
-    width: 400px;
+    width: 40%;
     margin: 15px;
 }
 
 .article-but {
+    display: flex;
     text-decoration: none;
-    background-color: #535386;
+    background: linear-gradient(#535386, purple);
     color: black;
+    width: 40%;
     font-size: 24px;
-    text-align: center;
+    float: center;
     padding: 10px 75px 10px 75px;
     justify-content: center;
 }
 
 footer {
     display: flex;
-    background-color: #535386;
+    background: linear-gradient(#535386, purple);
     padding: 20px;
     align-items: center;
 }
@@ -84,9 +90,10 @@ footer a {
 }
 
 footer p {
+    display: flex;
     font-size: 24px;
     margin-right: 15px;
-    justify-content: flex-end;
+    float: right;
 }
 
 header img {
@@ -99,4 +106,8 @@ header a {
     margin-right: 15px;
     margin-top: 27.5px;
     margin-bottom: 27.5px;
+}
+
+.special-img {
+    background-color: white;
 }
